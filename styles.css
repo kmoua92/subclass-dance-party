@@ -5,6 +5,7 @@ body{
   margin: 0px;
   background-color:#444;
   font-size: 18px;
+  background-image: url('http://www.ies-events.com/Websites/iesevents/PhotoGallery/1636666/Light%20Up%20Dance%20Floor.jpg?08778');
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
@@ -24,4 +25,10 @@ body, a:link, a:visited, a:active{
   border:10px solid red;
   border-radius:10px;
   position:absolute;
+}
+
+.flipping{
+  content: url('https://media.giphy.com/media/cjiYC0tvtBNde/giphy.gif');
+  border:none;
+
 }
