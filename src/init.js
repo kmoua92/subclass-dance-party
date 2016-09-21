@@ -74,20 +74,36 @@ $(document).ready(function() {
     $('body').append(dancer.$node);
   });
 
+  var oldLocations = [];
+
   $('.addLineUpButton').on('click', function(event) {
     var top = 0;
     var left = 500;
+    
+
     for (var i = 0; i < window.dancers.length; i++) {
       var dancer = window.dancers[i];
 
+      oldLocations.push([dancer.top, dancer.left]);
+
       var $node = dancer.$node;
 
-
-      $node.css({top: top, left: '60%'});
+      $node.animate({top: top, left: '60%'});
 
       // left -= 60;
       top += 50;
     }
+
+
+  });
+
+  $('.noLineUpButton').on('click', function() {
+    
+    for (var i = 0; i < window.dancers.length; i++) {
+      window.dancers[i].$node.animate({top: oldLocations[i][0], left: oldLocations[i][1]});
+    }
+    
+    
   });
 
   $('.interactButton').on('click', function(event) {
@@ -130,10 +146,10 @@ $(document).ready(function() {
       }
     }
 
-    var top1 = randObj.top;
-    var left1 = randObj.left;
-    var top2 = closestObj.top;
-    var left2 = closestObj.left;
+    var top1 = randObj.$node.css('top');
+    var left1 = randObj.$node.css('left');
+    var top2 = closestObj.$node.css('top');
+    var left2 = closestObj.$node.css('left');
     // randObj.setPosition(40, 50);
     // closestObj.setPosition(40, 60);
 
