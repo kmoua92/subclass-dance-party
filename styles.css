@@ -5,7 +5,8 @@ body{
   margin: 0px;
   background-color:#444;
   font-size: 18px;
-  background-image: url('http://www.ies-events.com/Websites/iesevents/PhotoGallery/1636666/Light%20Up%20Dance%20Floor.jpg?08778');
+  background-image: url('http://vectortoons.com/wp-content/uploads/2015/09/a-groovy-looking-nightclub-dance-floor-background.jpg');
+  background-size: cover;
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
@@ -28,7 +29,11 @@ body, a:link, a:visited, a:active{
 }
 
 .flipping{
-  content: url('https://media.giphy.com/media/cjiYC0tvtBNde/giphy.gif');
+  content: url('https://media.giphy.com/media/o9yAd5aKOK1W0/giphy.gif');
   border:none;
+}
 
+.spinning{
+  content: url(http://www.minionland.com/wp-content/uploads/2015/10/minion-stuart-dance-gif-1445349814n84gk.gif);
+  border:none;
 }
