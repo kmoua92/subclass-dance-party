@@ -5,7 +5,7 @@ body{
   margin: 0px;
   background-color:#444;
   font-size: 18px;
-  background-image: url('http://vectortoons.com/wp-content/uploads/2015/09/a-groovy-looking-nightclub-dance-floor-background.jpg');
+  background-image: url('http://www.walldevil.com/wallpapers/a80/dancefloor-room-club.jpg');
   background-size: cover;
 }
 body, a:link, a:visited, a:active{
@@ -28,12 +28,13 @@ body, a:link, a:visited, a:active{
   position:absolute;
 }
 
-.flipping{
+.carlton{
   content: url('https://media.giphy.com/media/o9yAd5aKOK1W0/giphy.gif');
   border:none;
 }
 
-.spinning{
+.minion{
   content: url(http://www.minionland.com/wp-content/uploads/2015/10/minion-stuart-dance-gif-1445349814n84gk.gif);
   border:none;
 }
+

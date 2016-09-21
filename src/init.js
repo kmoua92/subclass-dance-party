@@ -34,7 +34,7 @@ $(document).ready(function() {
   });
 
 
-  $('.addFlippingButton').on('click', function(event) {
+  $('.addCarltonButton').on('click', function(event) {
     
     var dancerMakerFunctionName = $(this).data('dancer-maker-function-name');
 
@@ -54,7 +54,7 @@ $(document).ready(function() {
     $('body').append(dancer.$node);
   });
 
-  $('.addSpinningButton').on('click', function(event) {
+  $('.addMinionButton').on('click', function(event) {
     
     var dancerMakerFunctionName = $(this).data('dancer-maker-function-name');
 
@@ -83,9 +83,9 @@ $(document).ready(function() {
       var $node = dancer.$node;
 
 
-      $node.css({top: top, left: left});
+      $node.css({top: top, left: '60%'});
 
-      left -= 60;
+      // left -= 60;
       top += 50;
     }
   });
@@ -118,8 +118,7 @@ $(document).ready(function() {
     // }
 
 
-    var shortestDist;
-    var closestObj;
+    var shortestDist, closestObj;
 
     for (var i = 0; i < window.dancers.length; i++) {
       var distance = getDistance(randObj, window.dancers[i]);
@@ -138,17 +137,22 @@ $(document).ready(function() {
     // randObj.setPosition(40, 50);
     // closestObj.setPosition(40, 60);
 
-    randObj.$node.animate({top: 40, left: 50});
-    closestObj.$node.animate({top: 40, left: 60});
+    randObj.$node.animate({top: '30%', left: '20%'});
+    closestObj.$node.animate({top: '30%', left: '30%'});
 
 
     setTimeout(function() {
       randObj.$node.animate({top: top1, left: left1});
       closestObj.$node.animate({top: top2, left: left2});
-    }, 5000);
+    }, 3000);
   });
 
-  
+
+  // mouseover function
+  $('.dancer').on('mouseover', function(event) {
+    $(this).slideToggle();
+  });
+
 
 });
 
