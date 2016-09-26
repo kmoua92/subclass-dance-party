@@ -1,5 +1,6 @@
 body, html{
   height:100%;
+
 }
 body{
   margin: 0px;
@@ -27,6 +28,7 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
 .carlton{
   content: url('https://media.giphy.com/media/o9yAd5aKOK1W0/giphy.gif');

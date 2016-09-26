@@ -163,12 +163,5 @@ $(document).ready(function() {
     }, 3000);
   });
 
-
-  // mouseover function
-  $('.dancer').on('mouseover', function(event) {
-    $(this).slideToggle();
-  });
-
-
 });
 
